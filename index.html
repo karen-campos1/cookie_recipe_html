@@ -37,62 +37,101 @@ In your HTML document.  -->
 <!DOCTYPE html>
 <html lang="en">
 <! i gave my page a declaration and a language -->
-<head>
-    <! here i have my meta under head, first 2 are mandatory and my last 3 are optional, I added the other meta tags to help functionality w/ SEO -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is my first html assignment, a recipe for making cookies.">
-    <meta name="keywords" content="HTML, chocolate chip cookie, baking, Frontend Engineering">
-    <meta name="author" content="Karen Campos">
-    <title>Classic Chocolate Chip Cookies</title>
-</head>
-<body>
-    <! here is the body of my page, it contains the main header, i used h1 -->
-    <! I also inserted a url to an image of a cookie -->
-    <! I used different header sizes to separate them from the contents of their respective lists-->
-    <! ingredients are in unordered list tags (since their order doesnt particularly matter in this case) -->
-    <! steps are tagged in an ordered list tag -->
-    <h1>Classic Chocolate Chip Cookies</h1>
-    <img src="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/62298.jpg" alt="Chocolate Chip Cookie" width="300" height="350" srcset="">
-    <br>
-    <p>You're looking at the <b>BEST</b> classic chocolate chip cookie recipe. This recipe has been perfected over a period of <i>7 years</i>, the flavors and texture are spot on and work every time -- you're welcome!
-        We've provided a list of ingredients with quantities to take the guess work out and fully detailed step-by-step directions. So without a further ado let's jump right into it.</p>
-    <h2>Classic Chocolate Chip Cookies Recipe</h2>
-    <h3>Ingredients:</h3>
-    <ul>
-        <li>1 cup (2 sticks) unsalted butter, softened</li>
-        <li>3/4 cup granulated sugar</li>
-        <li>3/4 cup packed brown sugar</li>
-        <li>1 teaspoon vanilla extract</li>
-        <li>2 large eggs</li>
-        <li>2 1/4 cups all-purpose flour</li>
-        <li>1 teaspoon baking soda</li>
-        <li>1/2 teaspoon salt</li>
-        <li>2 cups semisweet chocolate chips</li>
-        <li>1 cup chopped nuts (optional)</li>
-    </ul>
-    <p>Now that we have all of ingredients and quantities for each we can start making our cookies!</p>
-    <h2>Steps:</h2>
-    <ol>
-        <li>Preheat the oven to 375°F (190°C). Line baking sheets with parchment paper or silicone baking mats.</li>
-        <li>In a large mixing bowl, cream together the softened butter, granulated sugar, brown sugar, and vanilla extract until light and fluffy.</li>
-        <li>Add the eggs, one at a time, beating well after each addition.</li>
-        <li>In a separate bowl, whisk together the flour, baking soda, and salt. Gradually add the dry ingredients to the wet ingredients, mixing until just combined.</li>
-        <li>Stir in the chocolate chips and chopped nuts (if using) until evenly distributed throughout the dough.</li>
-        <li>Drop rounded tablespoons of dough onto the prepared baking sheets, spacing them about 2 inches apart.</li>
-        <li>Bake in the preheated oven for 9 to 11 minutes, or until the edges are golden brown.</li>
-        <li>Remove from the oven and allow the cookies to cool on the baking sheets for a few minutes before transferring them to wire racks to cool completely.</li>   
-    </ol>
-    <p>You should now have a tray of delicious classic chocolate chip cookies</p>
-    <hr>
-    <h4>Additional Notes:</h4>
-    <p>For a softer cookie, reduce the baking time by 2 minutes.</p>
-    <p>We've also provided an alternative recipe for comparing. Yes, we are THAT confident in our recipe!</p>
-    <a href=" https://www.ghirardelli.com/recipes/classic-chocolate-chip-cookies-rec1016" target="_blank">Alternative Recipe </a>
-    <p>Don't forget to enjoy your Class Chocolate Chip Cookies with a tall glass of milk &ndash; the perfect combination!</p>
+<! Please note: I removed most of my comment tags bc it was making it hard to read my hard-code-->
 
-<! I added a horizontal break to separate the recipe content from the additional notes -->
-<! as per the hw instructions I also added a hyperlink to a different recipe -->
-<! and lastly i also copied in at the end the paragraph that was in the instructions as well, I tested it and it printed the special characters correctly. -->
-</body>
+    <head>
+        <! here i have my meta under head, first 2 are mandatory and my last 3 are optional, I added the other meta tags
+            to help functionality w/ SEO -->
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="This is my first html assignment, a recipe for making cookies.">
+            <meta name="keywords" content="HTML, chocolate chip cookie, baking, Frontend Engineering">
+            <meta name="author" content="Karen Campos">
+            <title>Classic Chocolate Chip Cookies</title>
+            <link rel="stylesheet" href="./static/styles.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Pacifico&display=swap"
+                rel="stylesheet">
+
+
+    </head>
+
+    <body>
+        <div class="container">
+            <br><br><br><br>
+            <header><h1>Classic Chocolate Chip Cookies</h1></header><br><br><br><br>
+            <main>
+                <section id="main-paragraph">
+                <p> You're looking at the <b>BEST</b> classic chocolate chip cookie recipe. This recipe has
+                    been perfected over a period of <i>7 years</i>, the flavors and texture are spot on and
+                    work every time -- you're welcome!
+                    We've provided a list of ingredients with quantities to take the guess work out and
+                    fully detailed step-by-step directions. So without a further ado let's jump right into
+                    it.</p>
+                </section>
+                <br>
+                    <img src="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/62298.jpg"
+                    alt="Chocolate Chip Cookie" width="300" height="350" srcset="">
+                <br>
+                <h2>Classic Chocolate Chip Cookies Recipe</h2>
+                <section id="ingredients">
+                    <h3>Ingredients:</h3>
+                    <ul>
+                        <li>1 cup (2 sticks) unsalted butter, softened</li>
+                        <li>3/4 cup granulated sugar</li>
+                        <li>3/4 cup packed brown sugar</li>
+                        <li>1 teaspoon vanilla extract</li>
+                        <li>2 large eggs</li>
+                        <li>2 1/4 cups all-purpose flour</li>
+                        <li>1 teaspoon baking soda</li>
+                        <li>1/2 teaspoon salt</li>
+                        <li>2 cups semisweet chocolate chips</li>
+                        <li>1 cup chopped nuts (optional)</li>
+                    </ul>
+                </section>
+                <section id="steps">
+                    <p>Now that we have all of ingredients and quantities for each we can start making our
+                        cookies!</p>
+                    <h3>Steps:</h3>
+                    <ol>
+                        <li>Preheat the oven to 375°F (190°C). Line baking sheets with parchment paper or
+                            silicone baking mats.</li>
+                        <li>In a large mixing bowl, cream together the softened butter, granulated sugar, brown
+                            sugar, and vanilla extract until light and fluffy.</li>
+                        <li>Add the eggs, one at a time, beating well after each addition.</li>
+                        <li>In a separate bowl, whisk together the flour, baking soda, and salt. Gradually add
+                            the dry ingredients to the wet ingredients, mixing until just combined.</li>
+                        <li>Stir in the chocolate chips and chopped nuts (if using) until evenly distributed
+                            throughout the dough.</li>
+                        <li>Drop rounded tablespoons of dough onto the prepared baking sheets, spacing them
+                            about 2 inches apart.</li>
+                        <li>Bake in the preheated oven for 9 to 11 minutes, or until the edges are golden brown.
+                        </li>
+                        <li>Remove from the oven and allow the cookies to cool on the baking sheets for a few
+                            minutes before transferring them to wire racks to cool completely.</li>
+                    </ol>
+                    <p>You should now have a tray of delicious classic chocolate chip cookies</p>
+                </section>
+            
+            <hr>
+
+            <h4>Additional Notes:</h4>
+            <p>For a softer cookie, reduce the baking time by 2 minutes.</p>
+            <p>We've also provided an alternative recipe for comparing. Yes, we are THAT confident in
+                our recipe!</p>
+            <a href=" https://www.ghirardelli.com/recipes/classic-chocolate-chip-cookies-rec1016"
+                target="_blank">Alternative Recipe </a>
+            <p>Don't forget to enjoy your Classic Chocolate Chip Cookies with a tall glass of milk &ndash;
+                the perfect combination!</p>
+            <a href="submission.html"></a>
+            <button type="button" onclick="location.href='http://127.0.0.1:5502/homework/lesson1/submission.html'">Add
+                Your Own Recipe </button>
+            </main>
+            <footer>
+                <p> &copy; 2024 K &amp; Co. Classic Chocolate Chip Cookie Recipe. All rights reserved.</p>
+            </footer>
+        </div>
+    </body>
+
 </html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Recipe Submission</title>
+    <link rel="stylesheet" href="./static/styles.css">
+</head>
+<body>
+<header>
+    <h1>Submit Your Own Cookie Recipe</h1>
+    <p> We want to hear from our subscribers. Do you think you have a yummy and delicious chocolate chip cookie recipe? Share it with our community!</p>
+</header>
+<main>
+    <h3> Recipe Submission Form:</h3>
+    <form onSubmit="handlesubmit">
+        <label for="name">Name (required):</label>
+        <input type="txt"
+            id="name"
+            name="name"
+            placeholder="Enter Your First and Last Name"
+            autocomplete="on"
+            pattern="^[A-Za-z]+ [A-Za-z]+$"
+            required>
+
+
+
+    </form>
+
+
+</main>
+</body>
+</html>
