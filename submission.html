@@ -1,33 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cookie Recipe Submission</title>
     <link rel="stylesheet" href="./static/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Pacifico&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-<header>
-    <h1>Submit Your Own Cookie Recipe</h1>
-    <p> We want to hear from our subscribers. Do you think you have a yummy and delicious chocolate chip cookie recipe? Share it with our community!</p>
-</header>
-<main>
-    <h3> Recipe Submission Form:</h3>
-    <form onSubmit="handlesubmit">
-        <label for="name">Name (required):</label>
-        <input type="txt"
-            id="name"
-            name="name"
-            placeholder="Enter Your First and Last Name"
-            autocomplete="on"
-            pattern="^[A-Za-z]+ [A-Za-z]+$"
-            required>
+    <header>
+        <h1>Submit Your Own Cookie Recipe</h1>
+    </header>
+    <main>
+        <section id="intro-text">
+            <p> We want to hear from our subscribers. Do you think you have a yummy and delicious chocolate chip cookie
+                recipe? Share it with our community!</p>
+        </section>
+        <div>
+            <h3> Recipe Submission Form:</h3>
+        </div>
+        <form onSubmit="handlesubmit">
+            <label for="name">Name (required):</label>
+            <input type="text" id="name" name="name" placeholder="e.g. Jane Smith" autocomplete="on"
+                pattern="^[A-Za-z]+ [A-Za-z]+$" required>
+            <div role="alert" aria-live="assertive"></div>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" pattern="[\w]+@[\w]+(.[a-z]{2,3})"
+                title="Please provide a valid email" placeholder="e.g. baker-queen@gmail.com" required>
+            <div role="alert" aria-live="assertive"></div>
+            <label for="components">Ingredients:</label>
+            <textarea id="components" name="components" rows="8" cols="55"
+                placeholder="Tell us your ingredients and don't forget to include measurements!"></textarea>
+            <div role="alert" aria-live="assertive"></div>
+            <label for="recipe">Recipe:</label>
+            <textarea id="recipe" name="recipe" rows="8" cols="55"
+                placeholder="Tell us your recipe"></textarea>
+            <div role="alert" aria-live="assertive"></div>
+           
 
 
+            <button type="submit">Submit</button>
+        </form>
 
-    </form>
 
-
-</main>
+    </main>
+    <footer>
+        <p> &copy; 2024 K &amp; Co. Classic Chocolate Chip Cookie Recipe. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>
